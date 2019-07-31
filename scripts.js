@@ -5,8 +5,8 @@ var sprintFunctions = {
     return array.sort().pop();
   },
   
-  reversed: function(){  
-    // your code here
+  reversed: function(string){  
+    return string.split("").reverse().join("");
   },
 
   loudSnakeCase: function(){  

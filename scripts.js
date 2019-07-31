@@ -9,8 +9,12 @@ var sprintFunctions = {
     return string.split("").reverse().join("");
   },
 
-  loudSnakeCase: function(){  
-    // your code here
+  loudSnakeCase: function(string){
+    string = string.replace(/[^\w\s]/gi, '').replace(/ +(?= )/g,'').split(' ');
+    string = string.map(function(el) {
+      return el.charAt(0).toUpperCase() + el.slice(1);
+    });
+    return string.join("_");
   },
 
   compareArrays: function(){ 

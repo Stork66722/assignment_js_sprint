@@ -1,8 +1,8 @@
 // FILL IN THE FUNCTIONS BELOW
 
 var sprintFunctions = {
-  largestEl: function(){  
-    // your code here
+  largestEl: function(array){  
+    return array.sort().pop();
   },
   
   reversed: function(){  

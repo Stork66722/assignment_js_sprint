@@ -29,22 +29,8 @@ var sprintFunctions = {
         return equal;
     },
 
-    fizzBuzz: function (numbers) {
-        let numbers = [];
-        let index = 1;
-        while (index <= number) {
-            if (index % 3 === 0 && index % 5 !== 0) {
-                numbers.push("FIZZ");
-            } else if (index % 5 === 0 && index % 3 !== 0) {
-                numbers.push("BUZZ");
-            } else if (index % 3 === 0 && index % 5 === 0) {
-                numbers.push("FIZZBUZZ");
-            } else {
-                numbers.push(index);
-            }
-            index += 1;
-        }
-        return numbers;
+    fizzBuzz: function () {
+        // your code here
     },
 
     myMap: function () {

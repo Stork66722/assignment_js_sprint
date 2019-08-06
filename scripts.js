@@ -17,18 +17,16 @@ var sprintFunctions = {
         return string.join("_");
     },
 
-    compareArrays: function (arrayOne, arrayTwo) {
-        let works = false
-        if (arrayOne.length === arrayTwo.length) {
-            for (i = 0; i < arrayOne.length; i++) {
-                if (arrayOne[i] != arrayTwo[i]) {
-                    break
-                } else if (i === (arrayOne.length - 1)) {
-                    result = true
-                }
+    compareArrays: function (arr1, arr2) {
+        let index = 0;
+        let equal = true;
+        while (index < arr1.length) {
+            if (arr1[index] !== arr2[index]) {
+                equal = false;
             }
+            index += 1;
         }
-        return works
+        return equal;
     },
 
     fizzBuzz: function () {

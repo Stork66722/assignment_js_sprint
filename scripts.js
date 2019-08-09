@@ -45,11 +45,29 @@ var sprintFunctions = {
         return string;
     },
 
-    myMap: function () {
-        // your code here
+    myMap: function (array) {
+        var newArray = [];
+        for (i = 0; i < array.length; i++) {
+            newArray[i] = (array[i] * 2);
+        }
+        return newArray
     },
 
-    primes: function () {
-        // your code here
+    primes: function (number) {
+        var string = [];
+        for (i = 2; i < number; i++) {
+            var factors = 0;
+
+            for (e = 1; e <= i; e++) {
+                if (i % e === 0) {
+                    factors++;
+                }
+            }
+
+            if (factors === 2) {
+                string.push(i);
+            }
+        }
+        return string;
     },
 }

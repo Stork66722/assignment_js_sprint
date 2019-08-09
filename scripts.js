@@ -29,8 +29,20 @@ var sprintFunctions = {
         return equal;
     },
 
-    fizzBuzz: function () {
-        // your code here
+    fizzBuzz: function (num) {
+        string = [1];
+        for (i = 2; i <= num; i++) {
+            if (i % 3 === 0 && i % 5 === 0) {
+                string[(i - 1)] = "FIZZBUZZ";
+            } else if (i % 3 === 0) {
+                string[(i - 1)] = "FIZZ";
+            } else if (i % 5 === 0) {
+                string[(i - 1)] = "BUZZ";
+            } else {
+                string[(i - 1)] = i;
+            }
+        }
+        return string;
     },
 
     myMap: function () {
